@@ -1137,11 +1137,13 @@ sap.ui.define(
             new sap.ui.model.Filter("pn", sap.ui.model.FilterOperator.Contains, sQuery),
             new sap.ui.model.Filter("customer", sap.ui.model.FilterOperator.Contains, sQuery),
             new sap.ui.model.Filter("endCustomer", sap.ui.model.FilterOperator.Contains, sQuery),
-            new sap.ui.model.Filter("caused", sap.ui.model.FilterOperator.Contains, sQuery)
+            new sap.ui.model.Filter("caused", sap.ui.model.FilterOperator.Contains, sQuery),
+            new sap.ui.model.Filter("costTakeOver", sap.ui.model.FilterOperator.Contains, sQuery),
+            new sap.ui.model.Filter("customerResponse", sap.ui.model.FilterOperator.Contains, sQuery)
           ];
 
 
-          const aNumericFields = ["weight", "availableStock", "freeStock",];
+          const aNumericFields = ["weight", "availableStock", "freeStock", "rangeCoverage"];
           const aNumericFilters = aNumericFields.map(function (sField) {
             return new sap.ui.model.Filter({
               path: sField,

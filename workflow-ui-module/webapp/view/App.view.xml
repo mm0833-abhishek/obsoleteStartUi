@@ -282,7 +282,7 @@
                                 </table:template>
                             </table:Column>
 
-                            <table:Column width="8rem">
+                            <table:Column width="13rem">
                                 <Label text="{i18n>colCustomerResponse}" />
                                 <table:template>
                                     <Text
